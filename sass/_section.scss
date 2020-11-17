@@ -1,0 +1,19 @@
+@use 'consts';
+
+.section {
+  min-height: 100vh;
+}
+
+.content-section {
+  min-height: 50vh;
+}
+
+.section-body {
+  padding: consts.$unit;
+}
+
+@media (min-width: consts.$break-point-desktop-min) {
+  .section-body {
+    padding: (4 * consts.$unit) calc(50% - #{55 * consts.$unit});
+  }
+}
